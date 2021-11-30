@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/product.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#">
+        <img src="images/logo.png" alt="Logo" id="header-img" />
+      </a>
+      <nav id="nav-bar">
+        <a href="#into" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#videoDemo" class="nav-link">About us</a>
+        <a href="#data" class="nav-link">Login</a>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <main id="main">
+      <div id="into">
+        <div class="content">
+          <p class="content__title">Tech reality is now going virtual</p>
+          <p class="content__desc">
+            Best in class virtual reality gear to make your everyday experience
+            great. Go check it.
+          </p>
+          <button class="content__btn">Buy Now</button>
+        </div>
+        <div class="img">
+          <img src="images/product.png" alt="Product" />
+        </div>
+      </div>
+      <div id="features">
+        <div class="features__hang">
+          <p class="features__hang__title">Excellent Features we deliver</p>
+          <p class="features__hang__desc">
+            Best in class virtual reality gear to make your everyday experience
+            great. Go check it.
+          </p>
+        </div>
+        <div class="features__items">
+          <div class="features__card">
+            <img
+              src="images/notification.png"
+              alt=""
+              class="features__card__symbol"
+            />
+            <h3 class="features__card__title">Get your notification</h3>
+            <p class="features__card__desc">
+              Notification on fly via your registered mobileat the moment.
+            </p>
+          </div>
+          <div class="features__card">
+            <img
+              src="images/message.png"
+              alt=""
+              class="features__card__symbol"
+            />
+            <h3 class="features__card__heading">Access your messages</h3>
+            <p class="features__card__desc">
+              Access message which are pinged to you in the corner of VR.
+            </p>
+          </div>
+          <div class="features__card">
+            <img src="images/phone.png" alt="" class="features__card__symbol" />
+            <h3 class="features__card__heading">Get Monthly Updates</h3>
+            <p class="features__card__desc">
+              Get monthly updates and result of your VR on register mobile.
+            </p>
+          </div>
+          <div class="features__card">
+            <img src="images/feed.png" alt="" class="features__card__symbol" />
+            <h3 class="features__card__heading">Get Fresh Fees</h3>
+            <p class="features__card__desc">
+              Get fresh fees on your VR from our data center of your choice.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="videoDemo">
+        <div class="videoDemo__info">
+          <h3 class="videoDemo__info__title">
+            Virtual Reality taken to the next level
+          </h3>
+          <p class="videoDemo__info__desc">
+            Just get the code and sit tight, you'll witness its power and
+            performance in lead conversion. Powerful and productive technology.
+            Experience, then believe.
+          </p>
+          <button class="content__btn">Know More</button>
+        </div>
+        <div class="videoDemo__video">
+          <iframe
+            style="max-width: 100%; overflow: hidden"
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HBNH8tzsfVM?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div id="data">
+        <div class="intro">
+          <h3 class="data__title">
+            Subscribe now and get lifetime premium access.
+          </h3>
+          <p class="data__desc">
+            Just kidding you have to pay every month or every year to get all
+            the benefits we mentioned everywhere. Everything comes at a cost.
+          </p>
+        </div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email-ID"
+            required
+          />
+          <input
+            type="submit"
+            value="submit"
+            id="submit"
+            class="content__btn"
+          />
+        </form>
+      </div>
+      <footer id="footer">
+        <div class="social-media">
+          <a href="#"><i class="fab fa-codepen fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href=""><i class="fab fa-discord fa-2x"></i></a>
+        </div>
+        <p class="about">Made with 💚 by Prithvairaj</p>
+      </footer>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector("#nav-bar");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/ff38dd17d7.js"
+      crossorigin="anonymous"
+    ></script>
+    hg!`
+  </body>
+</html>
